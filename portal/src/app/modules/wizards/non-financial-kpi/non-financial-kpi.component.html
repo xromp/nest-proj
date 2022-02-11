@@ -1,0 +1,102 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="fw-bolder">
+      <i class="bi bi-pencil-square fs-2"></i>
+      <span class="my-5">Create a non-financial Driver</span>
+    </h2>
+    <div class="separator separator-content border-dark mygit status5"></div>
+
+    <form class="row g-3">
+      <div class="col-12">
+        <label class="form-label">Driver Name</label>
+        <input type="name" class="form-control" />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Description</label>
+        <textarea
+          class="form-control"
+          name="description"
+          placeholder="Write a description here"
+        ></textarea>
+      </div>
+      <div class="col-sm-4">
+        <label for="inputAddress2" class="form-label">Unit of Measure</label>
+        <select id="unitOfMeasure" class="form-select">
+          <option selected>Choose...</option>
+          <option>Number</option>
+          <option>Currency</option>
+          <option>Percentage</option>
+          <option>Days</option>
+          <option>Times</option>
+          <option>Custom...</option>
+        </select>
+      </div>
+      <div class="col-sm-4">
+        <label class="form-label">Custom UoM</label>
+        <input type="text" class="form-control" id="uom" disabled />
+      </div>
+      <div class="col-sm-4">
+        <label for="inputCity" class="form-label">Period</label>
+        <select id="unitOfMeasure" class="form-select">
+          <option selected>Choose...</option>
+          <option>Weekly</option>
+          <option>Monthly</option>
+          <option>Quarterly</option>
+          <option>Annually</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">Aggregation </label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>Summative</option>
+          <option>Average</option>
+          <option>Balance</option>
+        </select>
+      </div>
+      <div class="col-md-1 pt-8">
+        <button
+          type="button"
+          class="btn btn-transparent"
+          data-bs-toggle="tooltip"
+          data-bs-placement="top"
+          title="Tooltip on top"
+        >
+          <i class="bi bi-question-circle"></i>
+        </button>
+      </div>
+      <div class="col-md-6">
+        <label for="inputZip" class="form-label">Decimal Places</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>None</option>
+          <option>Zero</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="inputZip" class="form-label">Target Type</label>
+        <select id="inputState" class="form-select">
+          <option selected>A higher result is favorable</option>
+          <option>A lower result is favorable</option>
+        </select>
+      </div>
+      <div class="col-md-6"></div>
+      <div class="col-12">
+        <label class="form-label">Source/Ref</label>
+        <input type="name" class="form-control" />
+      </div>
+      <div class="col-12">
+        <label class="form-label">Responsibility Center</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+  <!--end::Card body-->
+</div>

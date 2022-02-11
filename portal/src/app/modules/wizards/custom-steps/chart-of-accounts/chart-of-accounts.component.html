@@ -1,0 +1,21 @@
+<span class="text-gray-500">Step 3: Review the classification of each account</span>
+<ul class="nav nav-tabs nav-line-tabs my-5 fs-6">
+    <li class="nav-item">
+        <a class="text-black fw-bold nav-link active" data-bs-toggle="tab" href="#profit_and_loss">Profit and Loss</a>
+    </li>
+    <li class="nav-item">
+        <a class="text-black fw-bold nav-link" data-bs-toggle="tab" href="#balance_sheet">Balance Sheet</a>
+    </li>
+</ul>
+<div class="tab-content" id="content">
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="showHideAccountNumber" onclick="showAccountNumber()">
+        <label id="accountNumberText" class="form-check-label" for="flexSwitchCheckDefault"><span>Hide Account Number</span></label>
+    </div>
+    <div class="tab-pane fade show active" id="profit_and_loss" role="tabpanel">
+        <app-profit-and-loss></app-profit-and-loss>
+    </div>
+    <div class="tab-pane fade" id="balance_sheet" role="tabpanel">
+        <app-balance-sheet></app-balance-sheet>
+    </div>
+</div>

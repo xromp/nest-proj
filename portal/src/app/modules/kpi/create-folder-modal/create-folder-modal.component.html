@@ -1,0 +1,40 @@
+<ng-template #CreateFolderModalRef let-modal>
+  <div class="modal position-relative d-block" tabindex="-1" role="dialog" id="create-folder-modal">
+    <div class="" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Create Folder</h4>
+                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                  <span class="svg-icon svg-icon-2x"></span>
+              </div>
+            </div>
+            <div class="modal-body">
+              <form [formGroup]="folderForm">
+                <div class="form-group mb-6">
+                  <label>Name<span class="text-danger">*</span></label>
+                  <input
+                    id="name"
+                    type="text" 
+                    class="form-control"
+                    formControlName="name"
+                    [ngClass]="{'is-invalid': folderForm.controls['name'].invalid && folderForm.controls['name'].dirty}" 
+                    placeholder="Name"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" 
+                  class="btn btn-secondary" 
+                  aria-label="Close" 
+                  (click)="modal.dismiss('close')">Close</button>
+                <button type="button" 
+                  class="btn btn-primary"
+                  [ngClass]="{'spinner spinner-white spinner-right': 1}"
+                  [class.disabled]="folderForm.invalid" 
+                  (click)="modal.close(folderForm.value)">Save changes</button>
+            </div>
+        </div>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,162 @@
+<span class="text-gray-500"
+  >Step 2: Review your default rates and company profile</span
+>
+<div class="mt-10">
+  <h1>Company Profile</h1>
+  <div class="separator border-4"></div>
+  <div class="mt-10 fv-row">
+    <form id="company_profile" class="form" action="#" autocomplete="off">
+      <div class="fv-row mb-10">
+        <h3>Company Name</h3>
+        <div class="separator border-4 mb-5"></div>
+
+        <label class="required fw-bold fs-6 mb-2">Company name</label>
+        <input
+          type="text"
+          name="company_name"
+          class="form-control form-control-solid mb-3 mb-lg-0"
+          placeholder=""
+          value=""
+        />
+      </div>
+      <div class="fv-row mb-10">
+        <h3>Default Rates</h3>
+        <div class="separator border-4 mb-5"></div>
+
+        <label class="required fw-bold fs-6 mb-2">Tax Rate (%)</label>
+        <input
+          type="number"
+          name="tax_rate"
+          class="form-control form-control-solid mb-3 mb-lg-0 w-25"
+          placeholder="0"
+          value=""
+        />
+        <label class="required fw-bold fs-6 mb-2 mt-2">Interest Rate (%)</label>
+        <input
+          type="number"
+          name="interest_rate"
+          class="form-control form-control-solid mb-3 mb-lg-0 w-25"
+          placeholder="0"
+          value=""
+        />
+        <label class="required fw-bold fs-6 mb-2">Cost of Capital (%)</label>
+        <input
+          type="number"
+          name="interest_rate"
+          class="form-control form-control-solid mb-3 mb-lg-0 w-25"
+          placeholder="0"
+          value=""
+        />
+        <label class="required fw-bold fs-6 mb-2">Currency</label>
+        <select
+          class="form-select form-select-solid w-25"
+          aria-label="Select example"
+        >
+          <option>--- SELECT ---</option>
+          <option value="1">AUD</option>
+          <option value="2">USD</option>
+          <option value="3">SGD</option>
+          <option value="4">PHP</option>
+          <option value="5">THB</option>
+          <option value="6">BTC</option>
+        </select>
+      </div>
+      <div class="fv-row mb-10">
+        <h3>Industry Classification</h3>
+        <div class="separator border-4 mb-5"></div>
+
+        <label class="required fw-bold fs-6 mb-2">Section</label>
+        <select
+          class="form-select form-select-solid w-25"
+          aria-label="Select example"
+        >
+          <option>--- SELECT ---</option>
+          <option value="1">Section 1</option>
+          <option value="2">Section 2</option>
+          <option value="3">Section 3</option>
+          <option value="4">Section 4</option>
+          <option value="5">Section 5</option>
+          <option value="6">Section 6</option>
+        </select>
+
+        <label class="required fw-bold fs-6 mb-2 mt-2">Divison</label>
+        <select
+          class="form-select form-select-solid w-25"
+          aria-label="Select example"
+        >
+          <option>--- SELECT ---</option>
+          <option value="1">Division 1</option>
+          <option value="2">Division 2</option>
+          <option value="3">Division 3</option>
+          <option value="4">Division 4</option>
+          <option value="5">Division 5</option>
+          <option value="6">Division 6</option>
+        </select>
+
+        <label class="required fw-bold fs-6 mb-2 mt-2">Group</label>
+        <select
+          class="form-select form-select-solid w-25"
+          aria-label="Select example"
+        >
+          <option>--- SELECT ---</option>
+          <option value="1">Group 1</option>
+          <option value="2">Group 2</option>
+          <option value="3">Group 3</option>
+          <option value="4">Group 4</option>
+          <option value="5">Group 5</option>
+          <option value="6">Group 6</option>
+        </select>
+
+        <label class="required fw-bold fs-6 mb-2 mt-2">Class</label>
+        <select
+          class="form-select form-select-solid w-25"
+          aria-label="Select example"
+        >
+          <option>--- SELECT ---</option>
+          <option value="1">Class 1</option>
+          <option value="2">Class 2</option>
+          <option value="3">Class 3</option>
+          <option value="4">Class 4</option>
+          <option value="5">Class 5</option>
+          <option value="6">Class 6</option>
+        </select>
+      </div>
+      <div class="fv-row mb-10">
+        <h3>Company Size</h3>
+        <div class="separator border-4 mb-5"></div>
+
+        <label class="required fw-bold fs-6 mb-2">Company Size</label>
+        <select
+          class="form-select form-select-solid w-25"
+          aria-label="Select example"
+        >
+          <option>--- SELECT ---</option>
+          <option value="1">1 - 10</option>
+          <option value="2">11 - 30</option>
+          <option value="3">31 - 60</option>
+          <option value="4">61 - 100</option>
+          <option value="5">101 - 150</option>
+          <option value="6">151+</option>
+        </select>
+      </div>
+      <!--end::Input group-->
+
+      <!--begin::Actions-->
+      <button
+        id="kt_docs_formvalidation_text_submit"
+        type="submit"
+        class="btn btn-primary"
+      >
+        <span class="indicator-label"> Save Data </span>
+        <span class="indicator-progress">
+          Please wait...
+          <span
+            class="spinner-border spinner-border-sm align-middle ms-2"
+          ></span>
+        </span>
+      </button>
+      <!--end::Actions-->
+    </form>
+    <!--end::Form-->
+  </div>
+</div>

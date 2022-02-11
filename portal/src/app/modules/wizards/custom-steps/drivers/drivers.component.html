@@ -1,0 +1,795 @@
+<span class="text-gray-500"
+  >Step 4: Select from a range of starndard financial Drivers or create your own
+  Driver.</span
+>
+<div class="mt-10">
+  <div class="d-flex">
+    <a href="formula-kpi.php" class="btn btn-secondary">Create a KPI</a>
+  </div>
+
+  <table
+    class="table align-middle table-row-dashed fs-6 gy-5 mb-10 min-h-200px draggable-zone"
+  >
+    <thead>
+      <tr class="text-start text-black fw-bolder fs-3 text-uppercase gs-0">
+        <th class="w-10px pe-2"></th>
+        <th class="min-w-250px">
+          <span contenteditable="true">Profitability</span>
+          <i class="bi bi-pencil-square"></i>
+        </th>
+        <th class="min-w-10px">Type</th>
+        <th class="min-w-125px">Importance</th>
+        <th class="w-125px"></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="fw-bold text-gray-600">
+      <tr class="draggable">
+        <td>
+          <div
+            class="form-check form-check-sm form-check-custom form-check-solid"
+          >
+            <input class="form-check-input" type="checkbox" value="1" checked />
+          </div>
+        </td>
+        <td>
+          Total Revenue
+          <button
+            type="button"
+            class="btn btn-icon btn-transparent"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Tooltip on top"
+          >
+            <i class="bi bi-question-circle"></i>
+          </button>
+        </td>
+        <td>Catalog</td>
+        <td>
+          <div class="rating">
+            <div class="rating">
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>Critical</td>
+        <td>
+          <div class="draggable-handle">
+            <i class="bi bi-list"></i>
+          </div>
+        </td>
+      </tr>
+      <tr class="draggable">
+        <td>
+          <div
+            class="form-check form-check-sm form-check-custom form-check-solid draggable-handle"
+          >
+            <input class="form-check-input" type="checkbox" value="1" checked />
+          </div>
+        </td>
+        <td>
+          Gross Profit (%)
+          <button
+            type="button"
+            class="btn btn-icon btn-transparent"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Tooltip on top"
+          >
+            <i class="bi bi-question-circle"></i>
+          </button>
+        </td>
+        <td>Catalog</td>
+        <td>
+          <div class="rating">
+            <div class="rating">
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>Medium</td>
+        <td>
+          <div class="draggable-handle">
+            <i class="bi bi-list"></i>
+          </div>
+        </td>
+      </tr>
+      <tr class="draggable">
+        <td>
+          <div
+            class="form-check form-check-sm form-check-custom form-check-solid draggable-handle"
+          >
+            <input class="form-check-input" type="checkbox" value="1" checked />
+          </div>
+        </td>
+        <td>
+          Operating Profit Margin (%)
+          <button
+            type="button"
+            class="btn btn-icon btn-transparent"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Tooltip on top"
+          >
+            <i class="bi bi-question-circle"></i>
+          </button>
+        </td>
+        <td>Catalog</td>
+        <td>
+          <div class="rating">
+            <div class="rating">
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>High</td>
+        <td>
+          <div class="draggable-handle">
+            <i class="bi bi-list"></i>
+          </div>
+        </td>
+      </tr>
+      <tr class="draggable">
+        <td>
+          <div
+            class="form-check form-check-sm form-check-custom form-check-solid draggable-handle"
+          >
+            <input class="form-check-input" type="checkbox" value="1" checked />
+          </div>
+        </td>
+        <td>
+          Breakeven Margin of Safety
+          <button
+            type="button"
+            class="btn btn-icon btn-transparent"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Tooltip on top"
+          >
+            <i class="bi bi-question-circle"></i>
+          </button>
+        </td>
+        <td>Catalog</td>
+        <td>
+          <div class="rating">
+            <div class="rating">
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2 checked">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+              <div class="rating-label me-2">
+                <i class="bi bi-star fs-1"></i>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>High</td>
+        <td>
+          <div class="draggable-handle">
+            <i class="bi bi-list"></i>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="mt-10">
+    <h1>Financials</h1>
+    <div class="separator"></div>
+    <table
+      class="table align-middle table-row-dashed fs-6 gy-5 mb-10 draggable-zone"
+    >
+      <thead>
+        <tr class="text-start text-black fw-bolder fs-3 text-uppercase gs-0">
+          <th class="w-10px pe-2"></th>
+          <th class="min-w-250px">
+            <span contenteditable="true">Efficiency</span>
+            <i class="bi bi-pencil-square"></i>
+          </th>
+          <th class="min-w-10px">Type</th>
+          <th class="min-w-125px">Importance</th>
+          <th class="w-125px"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="fw-bold text-gray-600">
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Return on Assets
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>High</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Return on Capital Employed
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Critical</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      id="activity"
+      class="table align-middle table-row-dashed fs-6 gy-5 mb-10 draggable-zone"
+    >
+      <thead>
+        <tr class="text-start text-black fw-bolder fs-3 text-uppercase gs-0">
+          <th class="w-10px pe-2"></th>
+          <th class="min-w-250px">
+            <span contenteditable="true">Activity</span>
+            <i class="bi bi-pencil-square"></i>
+          </th>
+          <th class="min-w-10px"></th>
+          <th class="min-w-125px"></th>
+          <th class="w-125px"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="fw-bold text-gray-600 childgrid">
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Activity Ratio
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Critical</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Accounts Payable Days
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Medium</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Accounts Receivable Days
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Default</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>High</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      id="liquidity"
+      class="table align-middle table-row-dashed fs-6 gy-5 mb-10 draggable-zone"
+    >
+      <thead>
+        <tr class="text-start text-black fw-bolder fs-3 text-uppercase gs-0">
+          <th class="w-10px pe-2"></th>
+          <th class="min-w-250px">
+            <span contenteditable="true">Liquidity</span>
+            <i class="bi bi-pencil-square"></i>
+          </th>
+          <th class="min-w-10px"></th>
+          <th class="min-w-125px"></th>
+          <th class="w-125px"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="fw-bold text-gray-600 childgrid">
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Current Ratio
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Medium</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Quick Ratio
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Medium</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table
+      id="gearing"
+      class="table align-middle table-row-dashed fs-6 gy-5 mb-10 draggable-zone"
+    >
+      <thead>
+        <tr class="text-start text-black fw-bolder fs-3 text-uppercase gs-0">
+          <th class="w-10px pe-2"></th>
+          <th class="min-w-250px">
+            <span contenteditable="true">Gearing</span>
+            <i class="bi bi-pencil-square"></i>
+          </th>
+          <th class="min-w-10px"></th>
+          <th class="min-w-125px"></th>
+          <th class="w-125px"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="fw-bold text-gray-600 childgrid">
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Debt to Equity
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>High</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+        <tr class="draggable">
+          <td>
+            <div
+              class="form-check form-check-sm form-check-custom form-check-solid"
+            >
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="1"
+                checked
+              />
+            </div>
+          </td>
+          <td>
+            Debt to Total Assets
+            <button
+              type="button"
+              class="btn btn-icon btn-transparent"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="Tooltip on top"
+            >
+              <i class="bi bi-question-circle"></i>
+            </button>
+          </td>
+          <td>Catalog</td>
+          <td>
+            <div class="rating">
+              <div class="rating">
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2 checked">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+                <div class="rating-label me-2">
+                  <i class="bi bi-star fs-1"></i>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Low</td>
+          <td>
+            <div class="draggable-handle">
+              <i class="bi bi-list"></i>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

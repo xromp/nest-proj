@@ -1,0 +1,121 @@
+<div class="d-flex flex-column flex-root">
+  <div
+    class="d-flex flex-column flex-lg-row flex-column-fluid stepper stepper-pills stepper-column"
+    id="kt_create_account_stepper"
+  >
+    <div
+      class="d-flex flex-column flex-lg-row-auto w-xl-500px bg-lighten shadow-sm"
+    >
+      <div
+        class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-500px scroll-y"
+      >
+        <div
+          class="d-flex flex-row-fluid flex-column flex-center p-10 pt-lg-20"
+        >
+          <a routerLink="/dashboard" class="mb-10 mb-lg-20">
+            <img
+              alt="Logo"
+              src="assets/media/logos/wesync.png"
+              class="h-100px"
+            />
+          </a>
+          <div class="stepper-nav">
+            <div
+              *ngFor="let step of steps"
+              class="stepper-item"
+              [class.current]="currentStep$.value === step.order"
+              [class.completed]="currentStep$.value > step.order"
+            >
+              <div class="stepper-line w-40px"></div>
+
+              <div class="stepper-icon w-40px h-40px">
+                <i class="stepper-check fas fa-check"></i>
+                <span class="stepper-number">{{step.order}}</span>
+              </div>
+
+              <div class="stepper-label">
+                <h3 class="stepper-title">{{step.title}}</h3>
+                <div class="stepper-desc fw-bold">{{step.description}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-150px min-h-lg-300px"
+          [style.background-image]="
+            'url(assets/media/illustrations/sigma-1/16.png)'
+          "
+        ></div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-lg-row-fluid py-10">
+      <div class="d-flex flex-center flex-column flex-column-fluid">
+        <div class="w-lg-700px p-10 p-lg-15 mx-auto">
+          <form
+            class="my-auto pb-5"
+            noValidate
+            id="kt_create_account_form"
+          >
+          <div class="current">
+            <ng-container *ngIf="currentStep$.value === 1">
+              <app-user class="w-100" 
+                (nextStep)="nextStep($event)"
+                (prevStep)="prevStep($event)"
+              ></app-user>
+            </ng-container>
+            <ng-container *ngIf="currentStep$.value === 2">
+              <app-organization-profile class="w-100"
+                (nextStep)="nextStep($event)"
+                (prevStep)="prevStep($event)">
+              </app-organization-profile>
+            </ng-container>
+            <ng-container *ngIf="currentStep$.value === 3">
+              <app-create-company class="w-100" 
+                (nextStep)="nextStep($event)"
+                (prevStep)="prevStep($event)"
+                >
+              </app-create-company>
+            </ng-container>
+            <ng-container *ngIf="currentStep$.value === 4">
+              <app-add-users class="w-100"
+              (nextStep)="nextStep($event)"
+              (prevStep)="prevStep($event)">
+            </app-add-users>
+            </ng-container>
+            <ng-container *ngIf="currentStep$.value === 5">
+              <app-completed class="w-100" 
+              (createAnotherCompany)="createCompany($event)"
+              (submit)="submit($event)"
+              >
+              </app-completed>
+            </ng-container>
+          </div>
+          </form>
+        </div>
+      </div>
+      <div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
+        <div class="d-flex flex-center fw-bold fs-6">
+          <a
+            href="https://keenthemes.com"
+            class="text-muted text-hover-primary px-2"
+            target="_blank"
+            >About</a
+          >
+          <a
+            href="https://keenthemes.com/support"
+            class="text-muted text-hover-primary px-2"
+            target="_blank"
+            >Support</a
+          >
+          <a
+            href="https://1.envato.market/EA4JP"
+            class="text-muted text-hover-primary px-2"
+            target="_blank"
+            >Purchase</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

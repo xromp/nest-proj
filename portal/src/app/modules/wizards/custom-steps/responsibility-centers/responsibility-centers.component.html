@@ -1,0 +1,68 @@
+<span class="text-gray-500 mb-5"
+  >Step 7: Create an new Responsibility Center(s)</span
+>
+<div class="m-5">
+  <button
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#responsibility_centers"
+  >
+    Add New Responsibility Center
+  </button>
+</div>
+<table
+  id="responsibility_center_tb"
+  class="table table-striped table-row-bordered gy-5 gs-7 border rounded"
+>
+  <thead>
+    <tr class="fw-bolder fs-6 text-gray-800 px-7">
+      <th>No.</th>
+      <th>Responsibility Center</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Laboratory A</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Laboratory B</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Laboratory C</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="modal fade" tabindex="-1" id="responsibility_centers">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Responsibility Centers</h5>
+
+        <!--begin::Close-->
+        <div
+          class="btn btn-icon btn-sm btn-active-light-primary ms-2"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span class="svg-icon svg-icon-2x"></span>
+        </div>
+        <!--end::Close-->
+      </div>
+
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

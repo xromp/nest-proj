@@ -1,0 +1,120 @@
+<ng-template #CreateDriverModalRef let-modal>
+  <div class="card card-custom">
+    <div class="card-header">
+      <h3 class="card-title">
+        Create Driver
+      </h3>
+    <div class="card-toolbar">
+      <div class="example-tools justify-content-center">
+        <span class="example-toggle" data-toggle="tooltip" title="View code"></span>
+        <span class="example-copy" data-toggle="tooltip" title="Copy code"></span>
+      </div>
+    </div>
+    </div>
+    <!--begin::Form-->
+    <form [formGroup]="driverForm">
+      <div class="card-body">
+        <div class="form-group mb-6">
+          <label>KPI Name<span class="text-danger">*</span></label>
+          <input
+            id="name"
+            type="text" 
+            class="form-control"
+            formControlName="name"
+            [ngClass]="{'is-invalid': driverForm.controls['name'].invalid && driverForm.controls['name'].dirty}" 
+            placeholder="KPI Name"
+          />
+        </div>
+  
+        <div class="form-group mb-6">
+          <label>Abbreviation <span class="text-danger">*</span></label>
+          <input 
+            type="text" 
+            class="form-control" 
+            formControlName="abbreviation" 
+            [ngClass]="{'is-invalid': driverForm.controls['abbreviation'].invalid && driverForm.controls['abbreviation'].dirty}" 
+            placeholder="Abbreviation"/>
+        </div>
+  
+        <div class="form-group mb-6">
+          <label>Description <span class="text-danger">*</span></label>
+          <input 
+            type="text" 
+            class="form-control" 
+            [ngClass]="{'is-invalid': driverForm.controls['description'].invalid && driverForm.controls['description'].dirty}" 
+            formControlName="description" 
+            placeholder="Description"/>
+        </div>
+  
+        <div class="form-group mb-6">
+          <label>Unit of Measure <span class="text-danger">*</span></label>
+          <input 
+            type="text"
+            class="form-control"
+            [ngClass]="{'is-invalid': driverForm.controls['uom'].invalid && driverForm.controls['uom'].dirty}" 
+            formControlName="uom"
+            placeholder="Unit of Measure"/>
+        </div>
+  
+        <div class="form-group mb-6">
+          <div class="row mb-6">
+            <div class="col-lg-6">
+              <label>Aggregation <span class="text-danger">*</span></label>
+              <input
+              type="text"
+              class="form-control"
+              [ngClass]="{'is-invalid': driverForm.controls['aggregation'].invalid && driverForm.controls['aggregation'].dirty}" 
+              formControlName="aggregation"
+              placeholder="Aggregation"/>
+            </div>
+            <div class="col-lg-6">
+              <label>Decimal Places<span class="text-danger">*</span></label>
+              <input
+              type="text"
+              class="form-control"
+              [ngClass]="{'is-invalid': driverForm.controls['decimal'].invalid && driverForm.controls['decimal'].dirty}" 
+              formControlName="decimal"
+              placeholder="Decimal Places"/>
+            </div>
+          </div>
+          
+        </div>
+  
+        <div class="form-group mb-6">
+          <label>Target Type <span class="text-danger">*</span></label>
+          <select 
+            class="form-control"
+            id="exampleSelect2"
+            [ngClass]="{'is-invalid': driverForm.controls['targetType'].invalid && driverForm.controls['targetType'].dirty}" 
+            formControlName="targetType"
+            placeholder="Target Type">
+            <option *ngFor="let type of targetTypes" [value]="type">{{type}}</option>
+          </select>
+        </div>
+  
+        <div class="form-group mb-6">
+          <label>Library Folder <span class="text-danger">*</span></label>
+          <select 
+            class="form-control"
+            id="library"
+            [ngClass]="{'is-invalid': driverForm.controls['libraryId'].invalid && driverForm.controls['libraryId'].dirty}" 
+            formControlName="libraryId"
+            placeholder="Library folder">
+            <option *ngFor="let type of kpiLibraries" [value]="type.id">{{type.name}}</option>
+          </select>
+        </div>
+        <div class="card-footer">
+          <button
+            type="button"
+            class="btn btn-primary mr-2"
+            [class.disabled]="driverForm.invalid"
+            (click)="submit()"
+            >Submit
+          </button>
+          <button type="reset" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </form>
+    <!--end::Form-->
+  </div>
+</ng-template>

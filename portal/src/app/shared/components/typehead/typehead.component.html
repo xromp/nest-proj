@@ -1,0 +1,15 @@
+<input
+  id="typeahead-focus"
+  type="text"
+  class="form-control"
+  [ngbTypeahead]="search"
+  [inputFormatter]="formatter"
+  [resultFormatter]="formatter"
+  [editable]='false'
+  (focus)="focus$.next($any($event).target.value)"
+  (click)="click$.next($any($event).target.value)"
+  [(ngModel)]="model"
+  (ngModelChange)="onChange($event)"
+  ngDefaultControl
+  #valueAccessor
+  />

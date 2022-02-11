@@ -1,0 +1,108 @@
+<div class="pb-10 pb-lg-15">
+  <h2 class="fw-bolder text-dark">Organization Profile</h2>
+  <div class="text-gray-400 fw-bold fs-6">
+    If you need more info, please check out
+    <a href="#" class="link-primary fw-bolder"> Help Page</a>.
+  </div>
+</div>
+<form [formGroup]="orgForm" autocomplete="false">
+  <div class="mb-10 fv-row">
+    <div class="form-group mb-6">
+      <label>Name<span class="text-danger">*</span></label>
+      <input
+        id="name"
+        type="text" 
+        class="form-control"
+        formControlName="name"
+        [ngClass]="{'is-invalid': orgForm.controls['name'].invalid && orgForm.controls['name'].dirty}" 
+        placeholder="First name"
+      />
+    </div>
+  </div>
+  <div class="form-group mb-6">
+    <label>Timezone<span class="text-danger">*</span></label>
+    <app-typehead
+      [data]="timezones"
+      formControlName="timezone"
+      [ngClass]="{'is-invalid': orgForm.controls['timezone'].invalid && orgForm.controls['timezone'].dirty}" 
+      placeholder="Timezone"
+      [(ngModel)]="model"
+    ></app-typehead>
+  </div>
+  <div class="form-group mb-6">
+    <label>Phone number<span class="text-danger">*</span></label>
+    <input
+      id="phoneNumber"
+      type="text" 
+      class="form-control"
+      formControlName="phoneNumber"
+      [ngClass]="{'is-invalid': orgForm.controls['phoneNumber'].invalid && orgForm.controls['phoneNumber'].dirty}" 
+      placeholder="Phone number"
+    />
+  </div>
+  <div class="form-group mb-6">
+    <label>Address<span class="text-danger">*</span></label>
+    <input
+      id="address"
+      type="text" 
+      class="form-control"
+      formControlName="address"
+      [ngClass]="{'is-invalid': orgForm.controls['address'].invalid && orgForm.controls['address'].dirty}" 
+      placeholder="Address"
+    />
+  </div>
+  <div class="form-group mb-6">
+    <label>State<span class="text-danger">*</span></label>
+    <input
+      id="state"
+      type="text" 
+      class="form-control"
+      formControlName="state"
+      [ngClass]="{'is-invalid': orgForm.controls['state'].invalid && orgForm.controls['state'].dirty}" 
+      placeholder="State"
+    />
+  </div>
+  <div class="form-group mb-6">
+    <label>Country<span class="text-danger">*</span></label>
+    <app-typehead
+      [data]="countries"
+      formControlName="country"
+      [ngClass]="{'is-invalid': orgForm.controls['country'].invalid && orgForm.controls['country'].dirty}" 
+      placeholder="Country"
+    ></app-typehead>
+  </div>
+</form>
+<div class="d-flex flex-stack pt-15">
+  <div class="mr-2">
+    <button
+      type="button"
+      class="btn btn-lg btn-light-primary me-3"
+      [disabled]="!orgForm.invalid"
+      (click)="goBack()"
+    >
+      <span
+        [inlineSVG]="'./assets/media/icons/duotune/arrows/arr063.svg'"
+        class="svg-icon svg-icon-4 me-1"
+      ></span>
+      Back
+    </button>
+  </div>
+  <div>
+    <button
+      type="button"
+      class="btn btn-lg btn-primary me-3"
+      [disabled]=""
+      (click)="submit()"
+    >
+      <span class="indicator-label">
+          Continue {{ " " }}
+          <span
+            [inlineSVG]="
+              './assets/media/icons/duotune/arrows/arr064.svg'
+            "
+            class="svg-icon svg-icon-3 ms-2 me-0"
+          ></span>
+      </span>
+    </button>
+  </div>
+</div>
